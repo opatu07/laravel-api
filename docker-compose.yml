@@ -17,8 +17,10 @@ services:
       -  ./db:/var/lib/mysql
       -  ./my_conf:/etc/mysql/conf.db
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: laravel
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_DATABASE: laravel-api
+      MYSQL_ROOT_HOST: '%'
   nginx:
     image: nginx:stable-alpine
     container_name: nginx
