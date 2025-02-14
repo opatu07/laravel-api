@@ -1,0 +1,3 @@
+# laravelでapi開発する環境を構築
+注意　laravelプロジェクトを作成後php artisan install:apiをするひつようあり
+apiのルートが出なくなる可能性があるから
